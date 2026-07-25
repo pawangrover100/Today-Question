@@ -243,3 +243,174 @@
 //   { id: 3, name: "Amit", salary: 55000, active: true },
 //   { id: 4, name: "Neha", salary: 35000, active: true },
 // ];
+
+// Q1. map()
+// Har number me 10 add karke naya array banao.
+// const numbers = [5, 10, 15, 20];
+// const arr = numbers.map((n) => {
+//   return n + 10;
+// });
+// console.log(arr);
+
+// Q2. map()
+// Sirf cities ka array banao.
+// const users = [
+//   { name: "Pawan", city: "Delhi" },
+//   { name: "Rahul", city: "Jaipur" },
+//   { name: "Amit", city: "Mumbai" },
+// ];
+
+// const arr = users.map((item) => item.city);
+// console.log(arr);
+
+// Q3. filter()
+// Sirf 18 se kam age wale nikalo.
+// const ages = [12, 18, 25, 17, 30, 16];
+// const arr = ages.filter((item) => item < 18);
+// console.log(arr);
+
+// Q4. filter()
+// Sirf 30000 se kam salary wale employees nikalo.
+// const employees = [
+//   { name: "A", salary: 25000 },
+//   { name: "B", salary: 50000 },
+//   { name: "C", salary: 15000 },
+// ];
+// const arr = employees.filter((item) => item.salary < 30000);
+// console.log(arr);
+// Q5. find()
+// id = 102 wala product find karo.
+// const products = [
+//   { id: 101, name: "Laptop" },
+//   { id: 102, name: "Mouse" },
+//   { id: 103, name: "Keyboard" },
+// ];
+
+// const arr = products.find((item) => (item.id = 102));
+// console.log(arr);
+
+// Q6. findIndex()
+// "Mumbai" ka index nikalo.
+// const cities = ["Delhi", "Jaipur", "Mumbai", "Pune"];
+// const arr = cities.findIndex((item) => item === "Mumbai");
+// console.log(arr);
+// Q7. includes()
+// Check karo "Node.js" present hai ya nahi.
+// const skills = ["HTML", "CSS", "JavaScript", "React"];
+// const arr = skills.includes("Node.js");
+// console.log(arr);
+
+// Q8. some()
+// Check karo kya koi temperature 40 se jyada hai.
+// const temperatures = [25, 30, 41, 28];
+// const arr = temperatures.some((n) => n > 40);
+// console.log(arr);
+// Q9. every()
+// Check karo kya sabhi numbers even hain.
+// const numbers = [2, 4, 6, 8, 10];
+// const arr = numbers.every((n) => n % 2 === 0);
+// console.log(arr);
+
+// const numbers = [5, 10, 15, 20];
+
+// const sum = numbers.reduce((a, b) => a + b, 0);
+
+// const average = sum / numbers.length;
+
+// console.log(average);
+
+// Q11. reduce()
+// Total quantity calculate karo.
+// const cart = [
+//   { item: "Pen", qty: 2 },
+//   { item: "Book", qty: 5 },
+//   { item: "Pencil", qty: 3 },
+// ];
+// const arr = cart.reduce((a, b) => a + b.qty, 0);
+// console.log(arr);
+// Q12. sort()
+// Descending order me sort karo.
+// const marks = [85, 60, 95, 40, 75];
+// const arr = marks.sort((a, b) => b - a);
+// console.log(arr);
+
+// Q13. sort()
+// Alphabetically sort karo.
+// const names = ["Zoya", "Ankit", "Rahul", "Aman"];
+// const arr = names.sort();
+// console.log(arr);
+
+// Q14. reverse()
+// Array reverse karo.
+// const letters = ["A", "B", "C", "D", "E"];
+// const arr = letters.reverse();
+// console.log(arr);
+// Q15. slice()
+// Sirf [300, 400, 500] ka naya array banao.
+// const data = [100, 200, 300, 400, 500, 600];
+// const arr = data.slice(2, 5);
+// console.log(arr);
+// Q16. splice()
+// "Banana" remove karke uski jagah "Kiwi" insert karo.
+// const fruits = ["Apple", "Banana", "Mango", "Orange"];
+// const arr = fruits.splice(1, 1);
+// console.log(arr);
+// console.log(fruits);
+
+// Q17. concat()
+// Teeno arrays ko merge karo.
+// const frontend = ["HTML", "CSS"];
+// const backend = ["Node.js", "Express"];
+// const database = ["MongoDB"];
+// const arr = frontend.concat(backend, database);
+// console.log(arr);
+
+// Q18. forEach()
+// Hello Pawan
+// Hello Rahul
+// Hello Amit
+// const users = ["Pawan", "Rahul", "Amit"];
+
+// users.forEach((user) => {
+//   console.log(`Hello ${user}`);
+// });
+
+// Print karo:
+
+// Q19. flat()
+// Array ko completely flat karo.
+// const arr = [1, [2, 3], [4, [5, 6]]];
+// const newarr = arr.flat(2);
+// console.log(newarr);
+
+// Q20. 🔥 Ultimate Interview Challenge
+const employees = [
+  { id: 1, name: "Pawan", salary: 25000, active: true },
+  { id: 2, name: "Rahul", salary: 45000, active: false },
+  { id: 3, name: "Amit", salary: 55000, active: true },
+  { id: 4, name: "Neha", salary: 35000, active: true },
+  { id: 5, name: "Karan", salary: 60000, active: false },
+];
+
+const arr1=employees.filter((n)=>{
+    return n.active===true
+})
+console.log(arr1)
+
+const arr2=employees.find(item => item)((n)=>{
+    return n.name})
+console.log(arr2)
+// Is array par ye sab solve karo:
+
+// Active employees nikalo.
+// Sirf names ka array banao.
+// salary >= 50000 wale employees nikalo.
+// Total salary calculate karo.
+// Average salary nikalo.
+// id = 4 employee find karo.
+// Rahul ka index find karo.
+// Check karo kya koi salary 70000 se jyada hai.
+// Check karo kya sabhi employees active hain.
+// Salary ascending sort karo.
+// Salary descending sort karo.
+// Sabhi names uppercase me convert karo.
