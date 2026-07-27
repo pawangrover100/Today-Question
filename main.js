@@ -604,3 +604,195 @@ const employees = [
 // Salary descending sort karo.
 // Names uppercase me convert karo.
 // Method chaining: Active employees → IT department → Names uppercase → Alphabetically sort.
+
+
+// Q1. map()
+// const products = [
+//   { name: "Laptop", price: 50000 },
+//   { name: "Phone", price: 20000 },
+//   { name: "Mouse", price: 1000 },
+// ];
+
+// 👉 Sabhi prices par 18% GST add karke naya array banao.
+
+// Q2. filter()
+// const orders = [
+//   { id: 1, status: "Delivered" },
+//   { id: 2, status: "Pending" },
+//   { id: 3, status: "Delivered" },
+//   { id: 4, status: "Cancelled" },
+// ];
+
+// 👉 Sirf "Delivered" orders nikalo.
+
+// Q3. find()
+// const students = [
+//   { roll: 101, name: "Ram" },
+//   { roll: 102, name: "Shyam" },
+//   { roll: 103, name: "Mohan" },
+// ];
+
+// 👉 Roll number 102 wala student find karo.
+
+// Q4. findIndex()
+// const cars = ["BMW", "Audi", "Tesla", "Volvo"];
+
+// 👉 "Tesla" ka index nikalo.
+
+// Q5. some()
+// const marks = [55, 60, 95, 40];
+
+// 👉 Check karo kya kisi student ke 90 se jyada marks hain.
+
+// Q6. every()
+// const salaries = [25000, 30000, 45000, 50000];
+
+// 👉 Check karo kya sabhi salaries 20000 se jyada hain.
+
+// Q7. reduce()
+// const numbers = [10, 20, 30, 40];
+
+// 👉 Sabhi numbers ka sum nikalo.
+
+// Q8. reduce()
+// const cart = [
+//   { name: "Pen", qty: 2, price: 20 },
+//   { name: "Book", qty: 3, price: 100 },
+//   { name: "Bag", qty: 1, price: 500 },
+// ];
+
+// 👉 Total bill nikalo.
+
+// Hint: qty × price
+
+// Q9. sort()
+// const ages = [35, 18, 25, 50, 12];
+
+// 👉 Descending order me sort karo.
+
+// Q10. sort()
+// const names = ["Ravi", "Ankit", "Pawan", "Amit"];
+
+// 👉 Alphabetically sort karo.
+
+// Q11. slice()
+// const numbers = [10, 20, 30, 40, 50, 60];
+
+// 👉 Sirf [20, 30, 40] ka naya array banao.
+
+// Q12. splice()
+// const colors = ["Red", "Blue", "Green", "Yellow"];
+
+// 👉 "Green" remove karke uski jagah "Black" add karo.
+
+// Q13. concat()
+// const frontend = ["HTML", "CSS"];
+// const backend = ["Node.js", "Express"];
+// const database = ["MongoDB"];
+
+// 👉 Ek hi array banao.
+
+// Q14. flat()
+// const arr = [1, [2, 3], [4, [5, [6]]]];
+
+// 👉 Completely flat karo.
+
+// Q15. forEach()
+// const employees = [
+//   { name: "Pawan", salary: 25000 },
+//   { name: "Rahul", salary: 45000 },
+// ];
+
+// 👉 Print karo:
+
+// Pawan earns ₹25000
+// Rahul earns ₹45000
+// Q16. Method Chaining
+// const users = [
+//   { name: "Pawan", active: true },
+//   { name: "Rahul", active: false },
+//   { name: "Amit", active: true },
+// ];
+
+// 👉 Sirf active users ke names uppercase me convert karo.
+
+// Expected Output
+
+// ["PAWAN", "AMIT"]
+// Q17. reduce() (Frequency Counter)
+// const fruits = [
+//   "Apple",
+//   "Banana",
+//   "Apple",
+//   "Orange",
+//   "Banana",
+//   "Apple",
+// ];
+
+// 👉 reduce() ka use karke frequency object banao.
+
+// Expected Output
+
+// {
+//   Apple: 3,
+//   Banana: 2,
+//   Orange: 1
+// }
+// Q18. groupBy using reduce()
+// const employees = [
+//   { name: "A", dept: "IT" },
+//   { name: "B", dept: "HR" },
+//   { name: "C", dept: "IT" },
+//   { name: "D", dept: "Sales" },
+// ];
+
+// 👉 Department ke hisaab se group karo.
+
+// Expected Output
+
+// {
+//   IT: [
+//     { name: "A", dept: "IT" },
+//     { name: "C", dept: "IT" }
+//   ],
+//   HR: [
+//     { name: "B", dept: "HR" }
+//   ],
+//   Sales: [
+//     { name: "D", dept: "Sales" }
+//   ]
+// }
+// Q19. Remove Duplicates
+// const numbers = [1, 2, 2, 3, 4, 4, 5, 5];
+
+// 👉 Duplicate values hatao.
+
+// Expected Output
+
+// [1, 2, 3, 4, 5]
+// Q20. ⭐ Ultimate MERN Interview Challenge
+// const users = [
+//   { id: 1, name: "Pawan", age: 22, active: true, salary: 25000 },
+//   { id: 2, name: "Rahul", age: 19, active: false, salary: 45000 },
+//   { id: 3, name: "Amit", age: 25, active: true, salary: 55000 },
+//   { id: 4, name: "Neha", age: 20, active: true, salary: 35000 },
+//   { id: 5, name: "Karan", age: 18, active: false, salary: 60000 },
+// ];
+
+// Is array par solve karo:
+
+// Active users nikalo.
+// Active users ke names uppercase me convert karo.
+// Total salary nikalo.
+// Average salary nikalo.
+// Highest salary nikalo.
+// Lowest salary nikalo.
+// id = 4 user find karo.
+// Rahul ka index find karo.
+// Check karo kya koi salary 70000 se jyada hai.
+// Check karo kya sabhi users 18+ hain.
+// Salary ascending sort karo.
+// Salary descending sort karo.
+// Duplicate names remove karo (agar ho).
+// Sirf names ka array banao.
+// Active users ko salary ke hisaab se descending order me sort karo.
