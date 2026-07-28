@@ -558,13 +558,13 @@
 // console.log(newarr)
 
 // Q20. ⭐ Ultimate Interview Challenge
-const employees = [
-  { id: 1, name: "Pawan", salary: 25000, active: true, department: "IT" },
-  { id: 2, name: "Rahul", salary: 45000, active: false, department: "HR" },
-  { id: 3, name: "Amit", salary: 55000, active: true, department: "IT" },
-  { id: 4, name: "Neha", salary: 35000, active: true, department: "Sales" },
-  { id: 5, name: "Karan", salary: 60000, active: false, department: "IT" },
-];
+// const employees = [
+//   { id: 1, name: "Pawan", salary: 25000, active: true, department: "IT" },
+//   { id: 2, name: "Rahul", salary: 45000, active: false, department: "HR" },
+//   { id: 3, name: "Amit", salary: 55000, active: true, department: "IT" },
+//   { id: 4, name: "Neha", salary: 35000, active: true, department: "Sales" },
+//   { id: 5, name: "Karan", salary: 60000, active: false, department: "IT" },
+// ];
 
 // Is array par ye sab solve karo:
 
@@ -605,106 +605,126 @@ const employees = [
 // Names uppercase me convert karo.
 // Method chaining: Active employees → IT department → Names uppercase → Alphabetically sort.
 
-
 // Q1. map()
+// 👉 Sabhi prices par 18% GST add karke naya array banao.
 // const products = [
 //   { name: "Laptop", price: 50000 },
 //   { name: "Phone", price: 20000 },
 //   { name: "Mouse", price: 1000 },
 // ];
 
-// 👉 Sabhi prices par 18% GST add karke naya array banao.
+// const arr = products.map((item) => ({
+//   ...item,
+//   price: item.price * 1.18,
+// }));
 
+// console.log(arr);
 // Q2. filter()
+// 👉 Sirf "Delivered" orders nikalo.
 // const orders = [
 //   { id: 1, status: "Delivered" },
 //   { id: 2, status: "Pending" },
 //   { id: 3, status: "Delivered" },
 //   { id: 4, status: "Cancelled" },
 // ];
-
-// 👉 Sirf "Delivered" orders nikalo.
-
+// const arr = orders.filter((item) => item.status === "Delivered");
+// console.log(arr);
 // Q3. find()
+// 👉 Roll number 102 wala student find karo.
 // const students = [
 //   { roll: 101, name: "Ram" },
 //   { roll: 102, name: "Shyam" },
 //   { roll: 103, name: "Mohan" },
 // ];
-
-// 👉 Roll number 102 wala student find karo.
-
+// const arr = students.find((item) => item.roll === 102);
+// console.log(arr);
 // Q4. findIndex()
-// const cars = ["BMW", "Audi", "Tesla", "Volvo"];
-
 // 👉 "Tesla" ka index nikalo.
-
+// const cars = ["BMW", "Audi", "Tesla", "Volvo"];
+// const arr = cars.findIndex((item) => item === "Tesla");
+// console.log(arr);
 // Q5. some()
-// const marks = [55, 60, 95, 40];
-
 // 👉 Check karo kya kisi student ke 90 se jyada marks hain.
-
+// const marks = [55, 60, 95, 40];
+// const arr = marks.some((n) => n > 90);
+// console.log(arr);
 // Q6. every()
-// const salaries = [25000, 30000, 45000, 50000];
-
 // 👉 Check karo kya sabhi salaries 20000 se jyada hain.
+// const salaries = [25000, 30000, 45000, 50000];
+// const arr = salaries.every((n) => n > 20000);
+// console.log(arr);
 
 // Q7. reduce()
-// const numbers = [10, 20, 30, 40];
-
 // 👉 Sabhi numbers ka sum nikalo.
-
+// const numbers = [10, 20, 30, 40];
+// const arr = numbers.reduce((a, b) => {
+//   return a + b;
+// });
+// console.log(arr);
 // Q8. reduce()
+// 👉 Total bill nikalo.
 // const cart = [
 //   { name: "Pen", qty: 2, price: 20 },
 //   { name: "Book", qty: 3, price: 100 },
 //   { name: "Bag", qty: 1, price: 500 },
 // ];
 
-// 👉 Total bill nikalo.
+// const totalBill = cart.reduce((total, item) => {
+//   return total + item.qty * item.price;
+// }, 0);
 
+// console.log(totalBill);
 // Hint: qty × price
 
 // Q9. sort()
-// const ages = [35, 18, 25, 50, 12];
-
 // 👉 Descending order me sort karo.
-
+// const ages = [35, 18, 25, 50, 12];
+// const arr = ages.sort((item1, item2) => item2 - item1);
+// console.log(arr);
 // Q10. sort()
-// const names = ["Ravi", "Ankit", "Pawan", "Amit"];
-
 // 👉 Alphabetically sort karo.
-
+// const names = ["Ravi", "Ankit", "Pawan", "Amit"];
+// const arr = names.sort();
+// console.log(arr);
 // Q11. slice()
-// const numbers = [10, 20, 30, 40, 50, 60];
-
 // 👉 Sirf [20, 30, 40] ka naya array banao.
+// const numbers = [10, 20, 30, 40, 50, 60];
+// const arr=numbers.slice(1,4)
+// console.log(arr)
 
 // Q12. splice()
+// 👉 "Green" remove karke uski jagah "Black" add karo.
 // const colors = ["Red", "Blue", "Green", "Yellow"];
 
-// 👉 "Green" remove karke uski jagah "Black" add karo.
+// console.log(colors);
+// colors.splice(2,1,"Black");
 
 // Q13. concat()
+// 👉 Ek hi array banao.
 // const frontend = ["HTML", "CSS"];
 // const backend = ["Node.js", "Express"];
 // const database = ["MongoDB"];
-
-// 👉 Ek hi array banao.
+// const arr=frontend.concat(backend,database)
+// console.log(arr)
 
 // Q14. flat()
-// const arr = [1, [2, 3], [4, [5, [6]]]];
-
 // 👉 Completely flat karo.
+// const arr = [1, [2, 3], [4, [5, [6]]]];
+// const newarr=arr.flat(Infinity)
+// console.log(newarr)
 
 // Q15. forEach()
+// 👉 Print karo:
 // const employees = [
 //   { name: "Pawan", salary: 25000 },
 //   { name: "Rahul", salary: 45000 },
 // ];
 
-// 👉 Print karo:
+// const arr = employees.map(
+//   (employee) => `${employee.name} earns ₹${employee.salary}`
+// );
 
+// console.log(arr);
 // Pawan earns ₹25000
 // Rahul earns ₹45000
 // Q16. Method Chaining
@@ -713,7 +733,10 @@ const employees = [
 //   { name: "Rahul", active: false },
 //   { name: "Amit", active: true },
 // ];
-
+// const arr = users
+//   .filter((item) => item.active)
+//   .map((item) => item.name.toUpperCase());
+// console.log(arr);
 // 👉 Sirf active users ke names uppercase me convert karo.
 
 // Expected Output
@@ -728,6 +751,13 @@ const employees = [
 //   "Banana",
 //   "Apple",
 // ];
+
+// const frequency = fruits.reduce((acc, fruit) => {
+//   acc[fruit] = (acc[fruit] || 0) + 1;
+//   return acc;
+// }, {});
+
+// console.log(frequency);
 
 // 👉 reduce() ka use karke frequency object banao.
 
@@ -746,26 +776,22 @@ const employees = [
 //   { name: "D", dept: "Sales" },
 // ];
 
-// 👉 Department ke hisaab se group karo.
+// const grouped = employees.reduce((acc, employee) => {
+//   if (!acc[employee.dept]) {
+//     acc[employee.dept] = [];
+//   }
 
-// Expected Output
+//   acc[employee.dept].push(employee);
 
-// {
-//   IT: [
-//     { name: "A", dept: "IT" },
-//     { name: "C", dept: "IT" }
-//   ],
-//   HR: [
-//     { name: "B", dept: "HR" }
-//   ],
-//   Sales: [
-//     { name: "D", dept: "Sales" }
-//   ]
-// }
+//   return acc;
+// }, {});
+
+// console.log(grouped);
 // Q19. Remove Duplicates
-// const numbers = [1, 2, 2, 3, 4, 4, 5, 5];
-
 // 👉 Duplicate values hatao.
+// const numbers = [1, 2, 2, 3, 4, 4, 5, 5];
+// const arr=[...new Set(numbers)]
+// console.log(arr)
 
 // Expected Output
 
@@ -782,17 +808,60 @@ const employees = [
 // Is array par solve karo:
 
 // Active users nikalo.
+// const arr=users.filter(item => item.active)
+// console.log(arr)
 // Active users ke names uppercase me convert karo.
+// const arr=users.filter(item => item.active).map(n=>n.name.toUpperCase())
+// console.log(arr)
 // Total salary nikalo.
+//  const arr=users.reduce((a,b)=>{
+//   return a+b.salary
+//  },0)
+//  console.log(arr)
 // Average salary nikalo.
+//  const arr=users.reduce((a,b)=>{
+//   return a+b.salary
+//  },0)/users.length
+//  console.log(arr)
 // Highest salary nikalo.
+// const highestSalary = users.reduce((max, user) => {
+//   return user.salary > max ? user.salary : max;
+// }, 0);
+
+// console.log(highestSalary);
 // Lowest salary nikalo.
+// const lowestSalary = users.reduce((min, user) => {
+//   return user.salary < min ? user.salary : min;
+// }, users[0].salary);
+
+// console.log(lowestSalary);
 // id = 4 user find karo.
+// const arr=users.find(item => item.id===4)
+// console.log(arr)
 // Rahul ka index find karo.
+// const arr=users.findIndex(item => item.name==="Rahul")
+// console.log(arr)
 // Check karo kya koi salary 70000 se jyada hai.
+// const arr=users.some((n)=>n.salary >70000)
+// console.log(arr)
 // Check karo kya sabhi users 18+ hain.
+// const arr=users.every((n)=>n.age>=18)
+// console.log(arr)
 // Salary ascending sort karo.
+// const arr=users.sort((item1,item2) => {
+//   return item1.salary-item2.salary})
+// console.log(arr)
 // Salary descending sort karo.
+// const arr=users.sort((item1,item2) => {
+//   return item2.salary-item1.salary})
+// console.log(arr)
 // Duplicate names remove karo (agar ho).
+// const names = users.map(user => user.name);
+// const arr = [...new Set(names)];
+// console.log(arr);
 // Sirf names ka array banao.
+// const arr=users.map((n)=>n.name)
+// console.log(arr)
 // Active users ko salary ke hisaab se descending order me sort karo.
+// const arr=users.filter(item => item.active).sort((item1,item2) => item2.salary- item1.salary)
+// console.log(arr)
