@@ -865,3 +865,193 @@
 // Active users ko salary ke hisaab se descending order me sort karo.
 // const arr=users.filter(item => item.active).sort((item1,item2) => item2.salary- item1.salary)
 // console.log(arr)
+
+
+
+// Q1. map()
+// 👉 Discount ke baad final price add karke naya array banao (finalPrice).
+// const products = [
+//   { name: "Laptop", price: 50000, discount: 10 },
+//   { name: "Phone", price: 20000, discount: 5 },
+//   { name: "Mouse", price: 1000, discount: 20 },
+// ];
+
+
+// Q2. filter()
+// const employees = [
+//   { name: "Pawan", salary: 25000 },
+//   { name: "Rahul", salary: 60000 },
+//   { name: "Amit", salary: 45000 },
+//   { name: "Neha", salary: 70000 },
+// ];
+
+// 👉 Sirf salary 50000 ya usse jyada wale employees nikalo.
+
+// Q3. find()
+// const users = [
+//   { id: 101, name: "Ram" },
+//   { id: 102, name: "Shyam" },
+//   { id: 103, name: "Mohan" },
+// ];
+
+// 👉 Name "Shyam" wala user find karo.
+
+// Q4. findIndex()
+// const courses = ["HTML", "CSS", "JavaScript", "React"];
+
+// 👉 "JavaScript" ka index nikalo.
+
+// Q5. some()
+// const marks = [40, 55, 80, 92];
+
+// 👉 Check karo kya kisi student ke 90 ya usse jyada marks hain.
+
+// Q6. every()
+// const users = [
+//   { name: "A", verified: true },
+//   { name: "B", verified: true },
+//   { name: "C", verified: false },
+// ];
+
+// 👉 Check karo kya sabhi users verified hain.
+
+// Q7. reduce()
+// const orders = [
+//   { amount: 200 },
+//   { amount: 500 },
+//   { amount: 300 },
+// ];
+
+// 👉 Total order amount nikalo.
+
+// Q8. reduce()
+// const students = [
+//   { name: "A", marks: 80 },
+//   { name: "B", marks: 70 },
+//   { name: "C", marks: 90 },
+// ];
+
+// 👉 Average marks nikalo.
+
+// Q9. reduce()
+// const numbers = [2, 4, 6, 8];
+
+// 👉 Sabhi numbers ka multiplication (product) nikalo.
+
+// Q10. sort()
+// const products = [
+//   { name: "Laptop", price: 50000 },
+//   { name: "Phone", price: 20000 },
+//   { name: "Mouse", price: 1000 },
+// ];
+
+// 👉 Price ke hisaab se ascending order me sort karo.
+
+// Q11. sort()
+// const students = [
+//   { name: "Ram", marks: 75 },
+//   { name: "Shyam", marks: 95 },
+//   { name: "Mohan", marks: 85 },
+// ];
+
+// 👉 Marks ke hisaab se descending sort karo.
+
+// Q12. slice()
+// const months = [
+//   "Jan",
+//   "Feb",
+//   "Mar",
+//   "Apr",
+//   "May",
+//   "Jun",
+// ];
+
+// 👉 Sirf "Mar", "Apr", "May" ka naya array banao.
+
+// Q13. splice()
+// const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+// 👉 "Orange" remove karke "Kiwi" aur "Grapes" add karo.
+
+// Q14. flat()
+// const arr = [1, [2, [3, [4, [5]]]]];
+
+// 👉 Array ko completely flat karo.
+
+// Q15. forEach()
+// const users = [
+//   { name: "Pawan", age: 22 },
+//   { name: "Rahul", age: 19 },
+// ];
+
+// 👉 Print karo:
+
+// Pawan is 22 years old
+// Rahul is 19 years old
+// Q16. Method Chaining
+// const employees = [
+//   { name: "A", active: true, salary: 50000 },
+//   { name: "B", active: false, salary: 30000 },
+//   { name: "C", active: true, salary: 70000 },
+// ];
+
+// 👉 Sirf active employees nikalo aur unki salary me 10% bonus add karke naya array banao.
+
+// Q17. reduce() (Frequency Counter)
+// const colors = [
+//   "Red",
+//   "Blue",
+//   "Red",
+//   "Green",
+//   "Blue",
+//   "Red",
+// ];
+
+// 👉 Har color kitni baar aaya hai, frequency object banao.
+
+// Q18. groupBy using reduce()
+// const students = [
+//   { name: "Ram", grade: "A" },
+//   { name: "Shyam", grade: "B" },
+//   { name: "Mohan", grade: "A" },
+//   { name: "Sita", grade: "C" },
+// ];
+
+// 👉 Grade ke hisaab se students ko group karo.
+
+// Q19. Remove Duplicates (Objects)
+// const users = [
+//   { id: 1, name: "Pawan" },
+//   { id: 2, name: "Rahul" },
+//   { id: 1, name: "Pawan" },
+//   { id: 3, name: "Amit" },
+// ];
+
+// 👉 id ke basis par duplicate objects remove karo.
+
+// Q20. ⭐ Ultimate Interview Challenge
+// const employees = [
+//   { id: 1, name: "Pawan", dept: "IT", salary: 50000, active: true },
+//   { id: 2, name: "Rahul", dept: "HR", salary: 30000, active: false },
+//   { id: 3, name: "Amit", dept: "IT", salary: 70000, active: true },
+//   { id: 4, name: "Neha", dept: "Sales", salary: 45000, active: true },
+//   { id: 5, name: "Riya", dept: "HR", salary: 60000, active: false },
+// ];
+
+// Is array par solve karo:
+
+// Active employees nikalo.
+// Sirf IT department ke employees nikalo.
+// Active employees ke names uppercase me convert karo.
+// Total salary nikalo.
+// Average salary nikalo.
+// Highest salary nikalo.
+// Lowest salary nikalo.
+// id = 3 employee find karo.
+// "Neha" ka index find karo.
+// Check karo kya koi salary 80000 se jyada hai.
+// Check karo kya sabhi employees active hain.
+// Salary ascending sort karo.
+// Salary descending sort karo.
+// Department ke hisaab se group karo.
+// Active employees ko salary ke hisaab se descending order me sort karo.
