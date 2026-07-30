@@ -1055,3 +1055,226 @@
 // Salary descending sort karo.
 // Department ke hisaab se group karo.
 // Active employees ko salary ke hisaab se descending order me sort karo.
+// Q1. map() + reduce()
+// const products = [
+//   { name: "Laptop", price: 50000 },
+//   { name: "Phone", price: 20000 },
+//   { name: "Mouse", price: 1000 },
+// ];
+
+// 👉 Sabhi prices par 18% GST add karo aur GST ke baad total amount nikalo.
+
+// Q2. filter() + map()
+// const students = [
+//   { name: "Ram", marks: 90 },
+//   { name: "Shyam", marks: 35 },
+//   { name: "Mohan", marks: 80 },
+//   { name: "Sita", marks: 25 },
+// ];
+
+// 👉 Sirf pass students (40+) ke names uppercase me return karo.
+
+// Q3. filter() + reduce()
+// const employees = [
+//   { name: "A", salary: 30000, active: true },
+//   { name: "B", salary: 50000, active: false },
+//   { name: "C", salary: 40000, active: true },
+// ];
+
+// 👉 Sirf active employees ki total salary nikalo.
+
+// Q4. reduce()
+// const numbers = [10, 20, 30, 40, 50];
+
+// 👉 Maximum aur Minimum ek hi reduce() se nikalo.
+
+// Expected Output
+
+// {
+//   max: 50,
+//   min: 10
+// }
+// Q5. reduce()
+// const words = [
+//   "react",
+//   "node",
+//   "react",
+//   "js",
+//   "node",
+//   "react",
+// ];
+
+// 👉 Frequency object banao.
+
+// Q6. reduce()
+// const users = [
+//   { name: "Pawan", dept: "IT" },
+//   { name: "Rahul", dept: "HR" },
+//   { name: "Amit", dept: "IT" },
+//   { name: "Neha", dept: "Sales" },
+// ];
+
+// 👉 Har department me kitne users hain, count nikalo.
+
+// Expected Output
+
+// {
+//   IT: 2,
+//   HR: 1,
+//   Sales: 1
+// }
+// Q7. sort()
+// const users = [
+//   { name: "Pawan", age: 22 },
+//   { name: "Rahul", age: 19 },
+//   { name: "Amit", age: 25 },
+// ];
+
+// 👉 Age ke hisaab se descending order me sort karo.
+
+// Q8. sort()
+// const names = ["banana", "Apple", "orange", "Mango"];
+
+// 👉 Case-insensitive alphabetical sort karo.
+
+// Q9. flatMap()
+// const users = [
+//   { name: "A", skills: ["HTML", "CSS"] },
+//   { name: "B", skills: ["JS", "React"] },
+// ];
+
+// 👉 Sabhi skills ka ek hi array banao.
+
+// Q10. reduce()
+// const cart = [
+//   { item: "Pen", qty: 2, price: 20 },
+//   { item: "Book", qty: 1, price: 100 },
+//   { item: "Bag", qty: 1, price: 500 },
+// ];
+
+// 👉 Total quantity aur total bill ek hi reduce() me nikalo.
+
+// Expected Output
+
+// {
+//   totalQty: 4,
+//   totalBill: 640
+// }
+// Q11. find()
+// const users = [
+//   { id: 1, profile: { city: "Delhi" } },
+//   { id: 2, profile: { city: "Jaipur" } },
+//   { id: 3, profile: { city: "Mumbai" } },
+// ];
+
+// 👉 Jaipur wala user find karo.
+
+// Q12. some() + every()
+// const marks = [45, 70, 85, 30, 90];
+
+// 👉 Check karo:
+
+// Kya koi fail hai? (< 33)
+// Kya sab pass hain?
+// Q13. reduce()
+// const transactions = [
+//   { type: "credit", amount: 1000 },
+//   { type: "debit", amount: 400 },
+//   { type: "credit", amount: 500 },
+//   { type: "debit", amount: 100 },
+// ];
+
+// 👉 Final balance nikalo.
+
+// Q14. map()
+// const users = [
+//   { firstName: "Pawan", lastName: "Grover" },
+//   { firstName: "Rahul", lastName: "Sharma" },
+// ];
+
+// 👉 fullName property add karo.
+
+// Q15. filter() + sort()
+// const products = [
+//   { name: "Laptop", stock: 10, price: 50000 },
+//   { name: "Mouse", stock: 0, price: 1000 },
+//   { name: "Phone", stock: 5, price: 20000 },
+// ];
+
+// 👉 Sirf stock wale products nikalo aur price ke hisaab se ascending sort karo.
+
+// Q16. reduce()
+// const numbers = [1, 2, 3, 4, 5];
+
+// 👉 Even numbers ka sum nikalo.
+
+// Q17. remove duplicate objects
+// const users = [
+//   { id: 1, name: "A" },
+//   { id: 2, name: "B" },
+//   { id: 1, name: "A" },
+//   { id: 3, name: "C" },
+// ];
+
+// 👉 reduce() ka use karke duplicate objects hatao.
+
+// Q18. groupBy + average
+// const employees = [
+//   { name: "A", dept: "IT", salary: 50000 },
+//   { name: "B", dept: "IT", salary: 70000 },
+//   { name: "C", dept: "HR", salary: 30000 },
+//   { name: "D", dept: "HR", salary: 50000 },
+// ];
+
+// 👉 Har department ki average salary nikalo.
+
+// Expected Output
+
+// {
+//   IT: 60000,
+//   HR: 40000
+// }
+// Q19. Method Chaining (Hard)
+// const users = [
+//   { name: "Pawan", active: true, salary: 50000 },
+//   { name: "Rahul", active: false, salary: 30000 },
+//   { name: "Amit", active: true, salary: 70000 },
+//   { name: "Neha", active: true, salary: 40000 },
+// ];
+
+// 👉 Ek hi chain me:
+
+// Active users nikalo.
+// Salary 45000+ wale rakho.
+// Names uppercase me convert karo.
+// Alphabetically sort karo.
+
+// Expected Output
+
+// ["AMIT", "PAWAN"]
+// Q20. ⭐ MERN Interview Master Challenge
+// const employees = [
+//   { id: 1, name: "Pawan", dept: "IT", salary: 50000, age: 22, active: true },
+//   { id: 2, name: "Rahul", dept: "HR", salary: 30000, age: 19, active: false },
+//   { id: 3, name: "Amit", dept: "IT", salary: 70000, age: 25, active: true },
+//   { id: 4, name: "Neha", dept: "Sales", salary: 45000, age: 21, active: true },
+//   { id: 5, name: "Riya", dept: "HR", salary: 60000, age: 24, active: false },
+// ];
+
+// Is array par solve karo:
+
+// IT department ki total salary.
+// Active employees ki average age.
+// Highest salary wala employee object.
+// Lowest salary wala employee object.
+// Department-wise employee count.
+// Department-wise total salary.
+// Department-wise average salary.
+// Active employees ke names uppercase me.
+// Salary descending sort.
+// age > 20 aur salary > 40000 wale employees.
+// Duplicate names remove (agar ho).
+// Sabhi departments ki list (unique).
+// Check karo kya koi salary 100000 se jyada hai.
+// Check karo kya sabhi employees 18+ hain.
+// Employees ko name ke hisaab se alphabetical sort karo.
