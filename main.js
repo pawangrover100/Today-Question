@@ -866,8 +866,6 @@
 // const arr=users.filter(item => item.active).sort((item1,item2) => item2.salary- item1.salary)
 // console.log(arr)
 
-
-
 // Q1. map()
 // 👉 Discount ke baad final price add karke naya array banao (finalPrice).
 // const products = [
@@ -876,62 +874,59 @@
 //   { name: "Mouse", price: 1000, discount: 20 },
 // ];
 
-
 // Q2. filter()
+// 👉 Sirf salary 50000 ya usse jyada wale employees nikalo.
 // const employees = [
 //   { name: "Pawan", salary: 25000 },
 //   { name: "Rahul", salary: 60000 },
 //   { name: "Amit", salary: 45000 },
 //   { name: "Neha", salary: 70000 },
 // ];
-
-// 👉 Sirf salary 50000 ya usse jyada wale employees nikalo.
+// const arr=employees.filter(item => item.salary>=50000)
+// console.log(arr)
 
 // Q3. find()
+// 👉 Name "Shyam" wala user find karo.
 // const users = [
 //   { id: 101, name: "Ram" },
 //   { id: 102, name: "Shyam" },
 //   { id: 103, name: "Mohan" },
 // ];
-
-// 👉 Name "Shyam" wala user find karo.
-
+// const arr=users.find(item => item.name==="Shyam")
+// console.log(arr)
 // Q4. findIndex()
-// const courses = ["HTML", "CSS", "JavaScript", "React"];
-
 // 👉 "JavaScript" ka index nikalo.
-
+// const courses = ["HTML", "CSS", "JavaScript", "React"];
+// const arr = courses.findIndex((item) => item === "JavaScript");
+// console.log(arr);
 // Q5. some()
-// const marks = [40, 55, 80, 92];
-
 // 👉 Check karo kya kisi student ke 90 ya usse jyada marks hain.
+// const marks = [40, 55, 80, 92];
+// const arr = marks.some((n) => n >= 90);
+// console.log(arr);
 
 // Q6. every()
+// 👉 Check karo kya sabhi users verified hain.
 // const users = [
 //   { name: "A", verified: true },
 //   { name: "B", verified: true },
 //   { name: "C", verified: false },
 // ];
-
-// 👉 Check karo kya sabhi users verified hain.
+// const arr = users.every((n) => n.verified);
+// console.log(arr);
 
 // Q7. reduce()
-// const orders = [
-//   { amount: 200 },
-//   { amount: 500 },
-//   { amount: 300 },
-// ];
-
 // 👉 Total order amount nikalo.
+// const orders = [{ amount: 200 }, { amount: 500 }, { amount: 300 }];
+// const ar=orders.reduce(()=>{})
 
 // Q8. reduce()
+// 👉 Average marks nikalo.
 // const students = [
 //   { name: "A", marks: 80 },
 //   { name: "B", marks: 70 },
 //   { name: "C", marks: 90 },
 // ];
-
-// 👉 Average marks nikalo.
 
 // Q9. reduce()
 // const numbers = [2, 4, 6, 8];
