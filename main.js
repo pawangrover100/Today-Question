@@ -934,44 +934,47 @@
 // 👉 Sabhi numbers ka multiplication (product) nikalo.
 
 // Q10. sort()
+// 👉 Price ke hisaab se ascending order me sort karo.
 // const products = [
 //   { name: "Laptop", price: 50000 },
 //   { name: "Phone", price: 20000 },
 //   { name: "Mouse", price: 1000 },
 // ];
-
-// 👉 Price ke hisaab se ascending order me sort karo.
+// const arr=products.sort((a,b)=>{
+//     return a.price-b.price})
+// console.log(arr)
 
 // Q11. sort()
+// 👉 Marks ke hisaab se descending sort karo.
 // const students = [
 //   { name: "Ram", marks: 75 },
 //   { name: "Shyam", marks: 95 },
 //   { name: "Mohan", marks: 85 },
 // ];
 
-// 👉 Marks ke hisaab se descending sort karo.
+// const arr = students.sort((a, b) => {
+//   return b.marks - a.marks;
+// });
+// console.log(arr);
 
 // Q12. slice()
-// const months = [
-//   "Jan",
-//   "Feb",
-//   "Mar",
-//   "Apr",
-//   "May",
-//   "Jun",
-// ];
-
-// 👉 Sirf "Mar", "Apr", "May" ka naya array banao.
+// // 👉 Sirf "Mar", "Apr", "May" ka naya array banao.
+// const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+// const arr = months.slice(2, 5);
+// console.log(arr);
+// console.log(months);
 
 // Q13. splice()
-// const fruits = ["Apple", "Banana", "Orange", "Mango"];
-
 // 👉 "Orange" remove karke "Kiwi" aur "Grapes" add karo.
+// const fruits = ["Apple", "Banana", "Orange", "Mango"];
+// const arr = fruits.splice(2, 1);
+// console.log(arr);
 
 // Q14. flat()
-// const arr = [1, [2, [3, [4, [5]]]]];
-
 // 👉 Array ko completely flat karo.
+// const arr = [1, [2, [3, [4, [5]]]]];
+// const newarr = arr.flat(Infinity);
+// console.log(newarr);
 
 // Q15. forEach()
 // const users = [
@@ -979,20 +982,26 @@
 //   { name: "Rahul", age: 19 },
 // ];
 
+// users.forEach((user) => {
+//   console.log(`${user.name} is ${user.age} years old`);
+// });
 // 👉 Print karo:
 
 // Pawan is 22 years old
 // Rahul is 19 years old
+
 // Q16. Method Chaining
-// const employees = [
-//   { name: "A", active: true, salary: 50000 },
-//   { name: "B", active: false, salary: 30000 },
-//   { name: "C", active: true, salary: 70000 },
-// ];
+// // 👉 Sirf active employees nikalo aur unki salary me 10% bonus add karke naya array banao.
+// const arr = employees
+//   .filter(item => item.active)
+//   .map(item => ({
+//     ...item,
+//     salary: item.salary * 1.10
+//   }));
 
-// 👉 Sirf active employees nikalo aur unki salary me 10% bonus add karke naya array banao.
-
+// console.log(arr);
 // Q17. reduce() (Frequency Counter)
+// 👉 Har color kitni baar aaya hai, frequency object banao.
 // const colors = [
 //   "Red",
 //   "Blue",
@@ -1001,10 +1010,15 @@
 //   "Blue",
 //   "Red",
 // ];
+// const frequency = colors.reduce((acc, color) => {
+//   acc[color] = (acc[color] || 0) + 1;
+//   return acc;
+// }, {});
 
-// 👉 Har color kitni baar aaya hai, frequency object banao.
+// console.log(frequency);
 
 // Q18. groupBy using reduce()
+// 👉 Grade ke hisaab se students ko group karo.
 // const students = [
 //   { name: "Ram", grade: "A" },
 //   { name: "Shyam", grade: "B" },
@@ -1012,7 +1026,6 @@
 //   { name: "Sita", grade: "C" },
 // ];
 
-// 👉 Grade ke hisaab se students ko group karo.
 
 // Q19. Remove Duplicates (Objects)
 // const users = [
